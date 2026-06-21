@@ -1,0 +1,28 @@
+# Environment variables / secrets - NEVER commit these
+.env
+*.env
+backend/.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Node / frontend
+node_modules/
+.next/
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log

@@ -1,0 +1,66 @@
+[
+  {
+    "question": "Who copy-edited the book 'Citation Needed'?",
+    "ground_truth": "The book was copy-edited by Lauren Lastowka."
+  },
+  {
+    "question": "Which film director felt that O.J. Simpson would not be believable as the killer in The Terminator?",
+    "ground_truth": "James Cameron did not feel Simpson would be believable in the role."
+  },
+  {
+    "question": "How many years did the authors spend collecting bad Wikipedia writing on their blog?",
+    "ground_truth": "They spent two years collecting the writing on their blog before publishing the book."
+  },
+  {
+    "question": "What is the specific cash prize that contestants compete for in Wacky Races?",
+    "ground_truth": "The contestants try to win a $300 prize."
+  },
+  {
+    "question": "How are 'assless' chaps described in the context of fetish fashion and the leather subculture?",
+    "ground_truth": "They are tightly fitted chaps worn without jeans or other garments layered beneath them, other than a codpiece."
+  },
+  {
+    "question": "What is 'Space Titanium' described as in the Godzilla excerpt?",
+    "ground_truth": "It is a nearly indestructible alloy used to construct Mechagodzilla's body."
+  },
+  {
+    "question": "According to the Creative Commons license summary, what are the conditions for Attribution?",
+    "ground_truth": "You must attribute the work as specified by the author or licensor, but not in a way that suggests they endorse you or your use of the work."
+  },
+  {
+    "question": "How did Godzilla defeat Mechagodzilla?",
+    "ground_truth": "Godzilla defeated Mechagodzilla by pulling its head off."
+  },
+  {
+    "question": "How did Joanna of Castile leave a warning for her husband Philip regarding his infidelity?",
+    "ground_truth": "She sheared the hair of a lady-in-waiting he had bedded and deposited the tresses on Philip's pillow."
+  },
+  {
+    "question": "What was the authors' primary purpose in publishing this collection of Wikipedia excerpts?",
+    "ground_truth": "Their goal was to curate and preserve 'The Best of Wikipedia’s Worst Writing' as works of art before they could be edited away."
+  },
+  {
+    "question": "Why did the Keebler Company replace their first elf with an anorexic old man?",
+    "ground_truth": "The first elf was originally created obese, which was poorly received by the press."
+  },
+  {
+    "question": "Where is the headquarters for the anti-drug organization D.A.R.E. America located?",
+    "ground_truth": "The headquarters is located in Inglewood, California."
+  },
+  {
+    "question": "Who was awarded the 2011 Gottlieb Duttweiler Prize?",
+    "ground_truth": "The prize was awarded to Wikipedia founder Jimmy Wales."
+  },
+  {
+    "question": "Why did early batches of Franken Berry cereal turn children's feces bright pink?",
+    "ground_truth": "The cereal used a specific dye that did not break down in the body."
+  },
+  {
+    "question": "What discovery led to the release of Azaria Chamberlain's mother from prison four years after her murder conviction?",
+    "ground_truth": "She was released when the baby's jacket was found in a dingo den, proving her innocence."
+  },
+  {
+    "question": "In the video game Teenage Mutant Ninja Turtles III: The Manhattan Project, what enemy is shown on the cover art but is missing from the actual game?",
+    "ground_truth": "A Triceraton is featured on the cover art but does not appear anywhere in the game."
+  }
+]

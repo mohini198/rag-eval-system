@@ -1,6 +1,8 @@
 import tiktoken
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-
+import re
+import numpy as np
+from app.embeddings.embedder import embed_text
 
 def chunk_fixed_size(text: str, chunk_size: int = 500, overlap: int = 50) -> list[str]:
     """
@@ -60,4 +62,54 @@ def chunk_recursive(text: str, chunk_size: int = 500, overlap: int = 50) -> list
 
     chunks = splitter.split_text(text)
     return chunks
+
+def _split_into_sentences(text: str) -> list[str]:
+    """Simple sentence splitter using punctuation as a boundary signal."""
+    sentences = re.split(r'(?<=[.!?])\s+', text)
+    return [s.strip() for s in sentences if s.strip()]
+
+def _cosine_similarity(vec_a: list[float], vec_b: list[float]) -> float:
+    """Measures how similar two embedding vectors are (1.0 = identical direction, 0 = unrelated)."""
+    a = np.array(vec_a)
+    b = np.array(vec_b)
+    return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
+
+def chunk_semantic(text: str, similarity_threshold: float = 0.6) -> list[str]:
+    """
+    Split text into chunks based on topic shifts, detected via embedding
+    similarity between consecutive sentences - not punctuation/structure
+    rules like the other two strategies.
+
+    Sentences are grouped together as long as consecutive similarity
+    stays ABOVE the threshold (same topic). A sharp drop below the
+    threshold signals a topic shift, triggering a new chunk boundary.
+
+    NOTE: this makes one embedding API call per sentence - expensive
+    and slow compared to fixed/recursive, which are free local logic.
+    """
+    sentences = _split_into_sentences(text)
+
+    if len(sentences) <= 1:
+        return sentences
+
+    sentence_embeddings = [embed_text(s) for s in sentences]
+
+    chunks = []
+    current_chunk = [sentences[0]]
+
+    for i in range(1, len(sentences)):
+        similarity = _cosine_similarity(sentence_embeddings[i - 1], sentence_embeddings[i])
+
+        if similarity >= similarity_threshold:
+            # still on the same topic - keep building this chunk
+            current_chunk.append(sentences[i])
+        else:
+            # topic shift detected - close current chunk, start a new one
+            chunks.append(" ".join(current_chunk))
+            current_chunk = [sentences[i]]
+
+    chunks.append(" ".join(current_chunk))  # don't forget the last chunk
+
+    return chunks
+
 

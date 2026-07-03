@@ -1,0 +1,122 @@
+[
+  {
+    "question": "Who copy-edited the book 'Citation Needed'?",
+    "answer": "Lauren Lastowka copy-edited the book [1].",
+    "ground_truth": "The book was copy-edited by Lauren Lastowka.",
+    "scores": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.923,
+      "context_precision": 0.333,
+      "context_recall": 1.0,
+      "hallucination": false
+    }
+  },
+  {
+    "question": "Which film director felt that O.J. Simpson would not be believable as the killer in The Terminator?",
+    "answer": "James Cameron [1]",
+    "ground_truth": "James Cameron did not feel Simpson would be believable in the role.",
+    "scores": {
+      "faithfulness": 0.5,
+      "answer_relevancy": 0.8,
+      "context_precision": 0.333,
+      "context_recall": 1.0,
+      "hallucination": true
+    }
+  },
+  {
+    "question": "How many years did the authors spend collecting bad Wikipedia writing on their blog?",
+    "answer": "The authors spent 2 years collecting bad Wikipedia writing on their blog [1], [2].",
+    "ground_truth": "They spent two years collecting the writing on their blog before publishing the book.",
+    "scores": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8,
+      "context_precision": 0.667,
+      "context_recall": 1.0,
+      "hallucination": false
+    }
+  },
+  {
+    "question": "What is the specific cash prize that contestants compete for in Wacky Races?",
+    "answer": "The specific cash prize that contestants compete for in Wacky Races is $300 [1].",
+    "ground_truth": "The contestants try to win a $300 prize.",
+    "scores": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8,
+      "context_precision": 0.333,
+      "context_recall": 1.0,
+      "hallucination": false
+    }
+  },
+  {
+    "question": "How are 'assless' chaps described in the context of fetish fashion and the leather subculture?",
+    "answer": "In the context of fetish fashion and the leather subculture, 'assless' chaps are described as being tightly fitted and worn without jeans or other garments layered beneath them, other than a codpiece. They can be made of leather, patent leather, or vinyl and are worn for decoration, serving no protective purpose [1].",
+    "ground_truth": "They are tightly fitted chaps worn without jeans or other garments layered beneath them, other than a codpiece.",
+    "scores": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8,
+      "context_precision": 0.0,
+      "context_recall": 1.0,
+      "hallucination": true
+    }
+  },
+  {
+    "question": "What is 'Space Titanium' described as in the Godzilla excerpt?",
+    "answer": "'Space Titanium' is described as a \"nearly indestructible alloy\" [1], [19].",
+    "ground_truth": "It is a nearly indestructible alloy used to construct Mechagodzilla's body.",
+    "scores": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.8,
+      "context_precision": 0.333,
+      "context_recall": 1.0,
+      "hallucination": false
+    }
+  },
+  {
+    "question": "According to the Creative Commons license summary, what are the conditions for Attribution?",
+    "answer": "According to the Creative Commons license summary, the condition for Attribution is that \"You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work.)\" [1]",
+    "ground_truth": "You must attribute the work as specified by the author or licensor, but not in a way that suggests they endorse you or your use of the work.",
+    "scores": {
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.85,
+      "context_precision": 0.333,
+      "context_recall": 1.0,
+      "hallucination": false
+    }
+  },
+  {
+    "question": "How did Godzilla defeat Mechagodzilla?",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kt3bmh91f8mv9k495h8wx88r` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99127, Requested 1654. Please try again in 11m14.784s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  },
+  {
+    "question": "How did Joanna of Castile leave a warning for her husband Philip regarding his infidelity?",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kt3bmh91f8mv9k495h8wx88r` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99126, Requested 1778. Please try again in 13m1.055999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  },
+  {
+    "question": "What was the authors' primary purpose in publishing this collection of Wikipedia excerpts?",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kt3bmh91f8mv9k495h8wx88r` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99125, Requested 1773. Please try again in 12m55.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  },
+  {
+    "question": "Why did the Keebler Company replace their first elf with an anorexic old man?",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kt3bmh91f8mv9k495h8wx88r` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99124, Requested 1780. Please try again in 13m1.055999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  },
+  {
+    "question": "Where is the headquarters for the anti-drug organization D.A.R.E. America located?",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kt3bmh91f8mv9k495h8wx88r` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99123, Requested 1779. Please try again in 12m59.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  },
+  {
+    "question": "Who was awarded the 2011 Gottlieb Duttweiler Prize?",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kt3bmh91f8mv9k495h8wx88r` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99122, Requested 1775. Please try again in 12m55.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  },
+  {
+    "question": "Why did early batches of Franken Berry cereal turn children's feces bright pink?",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kt3bmh91f8mv9k495h8wx88r` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99121, Requested 1776. Please try again in 12m55.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  },
+  {
+    "question": "What discovery led to the release of Azaria Chamberlain's mother from prison four years after her murder conviction?",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kt3bmh91f8mv9k495h8wx88r` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99120, Requested 1533. Please try again in 9m24.192s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  },
+  {
+    "question": "In the video game Teenage Mutant Ninja Turtles III: The Manhattan Project, what enemy is shown on the cover art but is missing from the actual game?",
+    "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kt3bmh91f8mv9k495h8wx88r` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99119, Requested 1783. Please try again in 12m59.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+  }
+]

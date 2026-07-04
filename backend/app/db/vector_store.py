@@ -6,9 +6,12 @@ from app.embeddings.embedder import embed_text, embed_batch
 
 load_dotenv()
 
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+
 DB_CONFIG = {
     "host": "localhost",
-    "port": 5433,
+    "port": int(os.getenv("DB_PORT", 5433)),
     "database": "rag_eval",
     "user": "postgres",
     "password": os.getenv("DB_PASSWORD", "postgres123"),
@@ -16,7 +19,12 @@ DB_CONFIG = {
 
 
 def get_connection():
-    """Get a connection to the Docker PostgreSQL instance."""
+    """
+    Connect to database — uses DATABASE_URL on Render (production),
+    falls back to DB_CONFIG for local development with Docker.
+    """
+    if DATABASE_URL:
+        return psycopg2.connect(DATABASE_URL, sslmode="require")
     return psycopg2.connect(**DB_CONFIG)
 
 

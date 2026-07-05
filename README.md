@@ -10,8 +10,8 @@ Veridoc is a production-grade RAG (Retrieval-Augmented Generation) system that l
 
 ## Live Demo
 
-- **Frontend:** [veridoc.vercel.app](https://veridoc.vercel.app) *(coming soon)*
-- **API Docs:** [veridoc-api.railway.app/docs](https://veridoc-api.railway.app/docs) *(coming soon)*
+- **Frontend:** [https://rag-eval-system-lovat.vercel.app](https://rag-eval-system-lovat.vercel.app)
+- **API Docs:** [https://mohini198-rag-backend.hf.space/docs](https://mohini198-rag-backend.hf.space/docs)
 
 ---
 

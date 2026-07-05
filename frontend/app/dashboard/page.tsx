@@ -140,8 +140,11 @@ export default function Dashboard() {
                     <XAxis dataKey="metric" tick={{ fontSize: 12, fill: "var(--text-muted)" }} axisLine={false} tickLine={false} />
                     <YAxis domain={[0, 1]} tick={{ fontSize: 12, fill: "var(--text-muted)" }} axisLine={false} tickLine={false} />
                     <Tooltip
-                      contentStyle={{ background: "var(--surface-2)", border: "0.5px solid var(--border)", borderRadius: 8, fontSize: 12 }}
-                      formatter={(value: number) => [value.toFixed(3), "Score"]}
+                      contentStyle={{ background: "var(--surface-2)", border: "0.5px solid var(--border)" }}
+                      formatter={(value: any) => {
+                        if (typeof value === 'number') return [value.toFixed(3), "Score"];
+                        return [Number(value || 0).toFixed(3), "Score"];
+                      }}
                     />
                     <Bar dataKey="score" fill="var(--fill-accent)" radius={[6, 6, 0, 0]} />
                   </BarChart>
